@@ -1,2 +1,2 @@
-# Dom_Exercises
- 
+# DOM_Exercicies
+ Exercícios com DHTML.

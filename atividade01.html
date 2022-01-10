@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="André Luferat - https://github.com/Luferat">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercícios com DHTML - Atividade 01</title>
+    <style>
+        /***************************************************
+         * Suas folhas de estilo devem ser inseridas aqui. *
+         ***************************************************/
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+
+        <h1>Exercícios com DHTML</h1>
+        <h2>Atividade 01</h2>
+
+        <p><a href="index.html">&#8592; Índice</a></p>
+
+        <div class="divbox div-grey" id="fruitList"></div>&nbsp;
+        <div class="divbox div-yellow" id="sortedFruitList"></div>
+
+        <h3>Exercício 1</h3>
+        <div class="item">
+            <ol>
+                <li>
+                    <p>Crie, na seção JavaScript desta página '<code>&lt;script&gt;&bull;&bull;&bull;&lt;/script&gt;</code>' o JavaScript necessário para selecionar cada elemento identificado por um ID;</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp" target="_blank">getElementById()</a></li>
+                        <li><a href="https://www.w3schools.com/jsref/met_document_queryselector.asp" target="_blank">querySelector()</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Exiba cada um dos elementos selecionados no console do navegador;</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/obj_console.asp" target="_blank">window.console</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Crie uma coleção simples (<code>fruits: array</code>) de frutas cítricas, contendo os seguintes items:</p>
+                    <ul style="list-style-type:square">
+                        <li>Laranja;</li>
+                        <li>Limão;</li>
+                        <li>Acerola;</li>
+                        <li>Tangerina;</li>
+                        <li>Uva;</li>
+                        <li>Abacaxi;</li>
+                        <li>Morango;</li>
+                        <li>Kiwi;</li>
+                        <li>Ameixa;</li>
+                        <li>Maracujá;</li>
+                        <li>Pêssego;</li>
+                        <li>Carambola.</li>&nbsp;
+                    </ul>
+
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_array.asp" target="_blank">Arrays</a></li>
+                    </ul>
+
+                </li>
+                <li>
+                    <p>Exiba toda a coleção no console do navegador, mostrando também a quantidade de itens na coleção;</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/jsref_length_array.asp" target="_blank">Array.length</a></li>
+                    </ul>
+                </li>
+            </ol>
+            <p class="red"><em>Observe que, como um exemplo, este exercício já está resolvido.</em></p>
+        </div>
+
+        <h3>Exercício 02</h3>
+        <div class="item">
+            <ol start="5">
+                <li>
+                    <p>Crie uma variável para ser usada na view (<code>fruitList: string</code>), que exibirá uma lista ordenada. A abertura da lista (<code>&lt;ul&gt;</code>) deve ser feita na daclaração da variável;</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">Variables</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Itere os itens de '<code>fruits</code>' usando a estrutura '<code>for()</code>' e construa a lista ordenada com eles;</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/js/js_loop_for.asp" target="_blank">for()</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Lembre-se de fechar a lista (<code>&lt;/ul&gt;</code>) após a iteração;</p>
+                </li>
+                <li>
+                    <p>Exiba a lista odernada no elemento com '<code>id="fruitList"</code>';</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp" target="_blank">innerHTML</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <h3>Exercício 03</h3>
+        <div class="item">
+            <ol start="9">
+                <li>
+                    <p>Crie uma cópia de '<code>fruits</code>' (<code>sortedFruits: array</code>) e ordene-a alfabeticamente;</p>
+                </li>
+                <li>
+                    <p>Exiba a coleção '<code>sortedFruits</code>' no console;</p>
+                </li>
+                <li>
+                    <p>Itere os itens de '<code>sortedFruits</code>' usando a estrutura '<code>array.foreach()</code>' e construa uma lista ordenada com eles, exibindo-a em seguida no elemento com '<code>id="sortedFruitList"</code>';</p>
+                    <ul class="refs">
+                        <li><a href="https://www.w3schools.com/jsref/jsref_foreach.asp" target="_blank">array.foreach()</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <p><a href="index.html">&#8592; Índice</a></p>
+
+    </div>
+
+    <script>
+
+        /*************************************************
+         * Seu código JavaScript deve ser inserido aqui. *
+         *************************************************/
+
+        // 1. Seleciona elementos com id=...
+        var divFruitList = document.getElementById('fruitList');
+        var divSortedFruitList = document.getElementById('sortedFruitList');
+
+        // 2. Exibe elementos com id=... no console.
+        console.log(divFruitList);
+        console.log(divSortedFruitList);
+
+        // 3. Cria coleção de frutas cítricas.
+        var fruits = ['Laranja', 'Limão', 'Acerola', 'Tangerina', 'Uva', 'Abacaxi', 'Morango', 'Kiwi', 'Ameixa', 'Maracujá', 'Pêssego', 'Carambola'];
+
+        // 4. Exibe coleção 'fruits' no console.
+        console.log('fruits: ', fruits, 'Tamanho: ', fruits.length);
+
+        // 5. Crie uma variavel 'fruitlist'
+        var fruitlist ='<ol>';
+
+        // 6. Itera 'fruitlist' usando for()
+        for (let item = 0; item < fruits.length; item ++){
+             fruitlist +=`<li>${fruits[item]}</li>\n`;
+         
+         }
+         // 7. Fecha a lista
+         fruitlist += '<ol>';
+        
+         // 8. escrever 'fruitlist' em 'divfruitlist'
+         divFruitList.innerHTML= fruitlist; 
+         
+         // 9. 'sortedFruits' é cópia de 'fruits'
+         sortedFruits = fruits; 
+         sortedFruits.sort();
+
+         //10. exibe 'sortedFruits' no console
+         console.log(sortedFruits);
+
+         //11. itera os itens e exibe em uma lista ordenada em 'divsortedFruitlist'
+         var sortedFruitList = '<ol>';
+        sortedFruits.forEach(function (item) {
+            sortedFruitList += `<li>${item}</li>`;
+        });
+        sortedFruitList += '</ol>';
+        divSortedFruitList.innerHTML = sortedFruitList;
+
+    </script>
+
+</body>
+
+</html>

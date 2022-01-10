@@ -1,0 +1,144 @@
+/**
+ * Folhas de estilo do template.
+ * Normalmente, não é necessário alterar nada aqui.
+ * Escreva folhas de estilo na tag <style>...</style> do página da atividade.
+ *
+ * By Luferat - https://github.com/Luferat
+ * license: MIT License - https://opensource.org/licenses/MIT
+ */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    padding: 1rem;
+}
+
+a {
+    color: rgb(70, 130, 180);
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0 -1rem;
+    padding: 1rem 0;
+    text-align: center;
+    background: rgb(31, 31, 31);
+    color: rgb(224, 224, 224);
+
+}
+
+code {
+    background: rgb(224, 224, 224);
+    border-radius: .2rem;
+    display: inline-block;
+    padding: .05rem .25rem;
+    white-space: nowrap;
+}
+
+h3 {
+    background: rgb(238, 238, 238);
+    border-radius: .2rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ol {
+    line-height: 1.4;
+}
+
+ol p {
+    line-height: normal;
+}
+
+.wrap {
+    background: rgb(255, 255, 255);
+    margin: auto;
+    max-width: 990px;
+    min-width: 280px;
+    overflow: auto;
+    padding: 0 1rem;
+}
+
+.item {
+    overflow: auto;
+}
+
+.nocmd {
+    background: rgb(255, 255, 204);
+}
+
+.btn {
+    align-items: center;
+    background: rgb(70, 130, 180);
+    border-radius: .2rem;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    font-family: monospace;
+    font-weight: normal;
+    height: 1.5rem;
+    justify-content: center;
+    width: 1.5rem;
+}
+
+.divbox {
+    width: 90%;
+    margin: auto;
+    border-radius: .5rem;
+}
+
+.div-grey {
+    background: rgb(221, 221, 221);
+    border: 1px dotted rgb(128, 128, 128);
+}
+
+.div-yellow {
+    background: rgb(255, 255, 204);
+    border: 1px dotted rgb(151, 151, 17);
+}
+
+.refs a {
+    color: rgb(122, 33, 0);
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.refs a:hover {
+    text-decoration: underline;
+    color: rgb(70, 130, 180);
+}
+
+.footer {
+    text-align: center;
+    font-style: italic;
+    border-top: 1px dotted rgb(128, 128, 128);
+    padding-top: 1rem;
+    font-size: .85rem;
+}
+
+.footer span {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.red {
+    color: rgb(255, 0, 0);
+}
